@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardBody, CardFooter, ButtonGroup, Button, Divider, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import ProductImg from '../assets/images/0a48d49733d61d3fa6a2ad469bc69ff3-removebg-preview-transformed.png';
+
 import { useCart } from '../../context/cart.js'; // Import your cart context
 import toast from 'react-hot-toast';
 

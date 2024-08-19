@@ -111,13 +111,21 @@ function NavBar() {
               <MenuList border={'gray'} bg={'gray.200'} p={2} color={'#afafaf'}>
                 {categories.map((category) => (
                   <React.Fragment key={category._id}>
-                    <MenuItem
+                    {/* <MenuItem
                       _hover={{ bg: 'gray.300' }}
                       bg={'gray.200'}
                       color={'black'}
                     >
                       {category.name}
-                    </MenuItem>
+                    </MenuItem> */}
+                    <MenuItem
+  _hover={{ bg: 'gray.300' }}
+  bg={'gray.200'}
+  color={'black'}
+  onClick={() => navigate(`/shop?category=${category._id}`)}
+>
+  {category.name}
+</MenuItem>
                     <MenuDivider color={'black'} />
                   </React.Fragment>
                 ))}
